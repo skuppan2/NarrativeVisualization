@@ -1,5 +1,5 @@
 const yearStart = 2000;
-const yearEnd = 2018;
+const yearEnd = 2019;
 const totalNoOfCountriesToLoad = 400;
 
 const margin = {top: 20, right: 20, bottom: 50, left: 50},
@@ -235,7 +235,7 @@ function drawChart(countryCode, countrylabel, color){
                 "translate(" + (width/2) + " ," + 
                                 (height + margin.top + 20) + ")")
             .style("text-anchor", "middle")
-            .text("year");
+            .text("Year");
 
         console.log("add y axis");
         // Add the Y Axis
@@ -251,7 +251,8 @@ function drawChart(countryCode, countrylabel, color){
             .attr("x", 0 - (height / 2))
             .attr("dy", "1em")
             .style("text-anchor", "middle")
-            .text("percentage");
+			.style("color", "blue")
+            .text("Percentage");
 
 
         console.log("draw data");
